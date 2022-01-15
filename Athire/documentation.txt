@@ -1,0 +1,19 @@
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'HOST': '127.0.0.1',
+        'PORT': '3306',
+        'NAME': 'athire_database',
+        'USER': 'techlanzers',
+        'PASSWORD': 'techlanzers123',
+        'OPTIONS': {
+            'init_command': "SET sql_mode='STRICT_TRANS_TABLES'",
+        },
+    }
+}
+
+Terminal:
+1. python manage.py startapp herd_management
+2. pip install mysqlclient
+3. python manage.py makemigrations
+4. python manage.py migrate
